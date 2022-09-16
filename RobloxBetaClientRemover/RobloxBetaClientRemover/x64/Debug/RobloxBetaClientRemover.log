@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\atari-development\Documents\Projects\RobloxBetaClientRemover\RobloxBetaClientRemover\main.cpp(115,69): warning C4474: 'sprintf' : too many arguments passed for format string
+C:\Users\atari-development\Documents\Projects\RobloxBetaClientRemover\RobloxBetaClientRemover\main.cpp(115,69): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  RobloxBetaClientRemover.vcxproj -> C:\Users\atari-development\Documents\Projects\RobloxBetaClientRemover\x64\Debug\RobloxBetaClientRemover.exe
