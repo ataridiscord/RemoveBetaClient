@@ -11,6 +11,8 @@ The program will first find the latest version of Roblox. Once done, it will sca
 Once done, it'll remove the current Roblox client and run the Launcher as an Administrator.
 
 ## How to Compile
+You can download a compiled version [here](https://github.com/atari-1337/RobloxBetaClientRemover/releases/download/V1/Compiled.zip)
+
 NOTE: Ensure you follow these steps or it'll most likely fail to build.
 
 1. If you want to use build this project, you need to setup a few things. First, install [Visual Studio 2022](https://www.visualstudio.com/downloads/).
