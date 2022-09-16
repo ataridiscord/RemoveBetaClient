@@ -15,12 +15,11 @@ int main()
 {
     std::string response{};
     std::string header{};
-    long response_code{};
+    auto response_code = 0ul;
 
     SetConsoleTitleA("Roblox Beta Client Remover - atari#7353");
 
-    std::cout << "Welcome! This program aims to help you easily remove the Roblox Beta Client and restore the old client we all know and love.\n";
-    std::cout << "This project is licensed under: GNU GENERAL PUBLIC LICENSE\nhttps://github.com/atari-1337/RobloxBetaClientRemover/blob/main/LICENSE\n\n";
+    std::cout << "Welcome! This program aims to help you easily remove the Roblox Beta Client and restore the old client we all know and love.\nThis project is licensed under: GNU GENERAL PUBLIC LICENSE\nhttps://github.com/atari-1337/RobloxBetaClientRemover/blob/main/LICENSE\n\n";
     std::cout << "[INFO] Fetching current Roblox version...\n";
 
     curl_global_init(CURL_GLOBAL_DEFAULT);
@@ -44,7 +43,7 @@ int main()
     if (response_code != 200)
     {
         std::cout << "[ERROR] Failed to fetch current Roblox version.\n";
-        std::getchar();
+        std::cin.get();
         return EXIT_FAILURE;
     }
 
@@ -62,16 +61,16 @@ int main()
         std::cout << "[INFO] Removing the beta client...\n";
         std::filesystem::remove(client_path);
         std::cout << "[INFO] This program will run the Roblox Launcher as an Administrator for the process to complete. If asked by UAC, please click \"Yes\" so that the launcher runs correctly.\n";
-        std::getchar();
+        std::cin.get();
         system(std::format("runas.exe / savecred / user:administrator {}", launcher_path).c_str());
 
         std::cout << "[INFO] If the launcher opened correctly and finished installing, the operation has succeeded.\n";
-        std::getchar();
+        std::cin.get();
 
         return EXIT_SUCCESS;
     }
 
     std::cout << "[ERROR] Failed to locate one or more of 3 required paths. Please check to make sure they exist.\n";
-    std::getchar();
+    std::cin.get();
     return EXIT_FAILURE;
 }
