@@ -1,7 +1,7 @@
 # RobloxBetaClientRemover
 A simple tool that I created which restores the old Roblox client that we all know and love. The reasoning as to why this was created is because Roblox forced their beta client onto all users - making most of the Roblox community unhappy with the decision.
 
-NOTE: This is a remake of [Cy's project](https://github.com/CyOfficial/RobloxBetaClientRemover), which he made in Python.
+NOTE: This is a remake of [Cy's project](https://github.com/CyOfficial/RobloxBetaClientRemover), which he made in Python. This is now patched.
 
 ## Summary
 The program will first find the latest version of Roblox. Once done, it will scan for the version path, the launcher path and the client path.
